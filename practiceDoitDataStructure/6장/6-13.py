@@ -38,7 +38,6 @@ def qsort(a: MutableSequence, left: int, right:int) -> None:
                 a[pl],a[pr] = a[pr], a[pl]
                 pl += 1
                 pr -= 1
-        
         if left < pr: qsort(a, left, pr)
         if right > pl: qsort(a, pl, right)
 
